@@ -1,0 +1,42 @@
+# MkDocs build output directory
+/site/
+
+# Python virtual environment (common)
+/venv/
+/env/
+/.venv/
+/.env/
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Python dependency files (if not committed)
+/Pipfile
+/pipenv.lock
+/pyproject.toml
+/poetry.lock
+/requirements.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# MkDocs specific
+/.mkdocs.yml.swp  # if you use Vim
+/mkdocs.yml~      # backup files
+
+# Optional: ignore local MkDocs config overrides
+# /mkdocs-local.yml
+
+# Logs and databases
+*.log
+*.sqlite
