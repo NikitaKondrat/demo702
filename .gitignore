@@ -1,42 +1,86 @@
-# MkDocs build output directory
+# ======================
+# MkDocs Build Output
+# ======================
 /site/
+/.site/
 
-# Python virtual environment (common)
-/venv/
-/env/
-/.venv/
-/.env/
+# ======================
+# Python Virtual Environment
+# ======================
+.venv/
+venv/
+env/
+ENV/
+*.venv/
 
-# Python bytecode and cache
+# ======================
+# Python Bytecode & Cache
+# ======================
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
+*.py[cod]
+*$py.class
 *.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Python dependency files (if not committed)
-/Pipfile
-/pipenv.lock
-/pyproject.toml
-/poetry.lock
-/requirements.txt
+# ======================
+# Environment Variables
+# ======================
+.env
+.env.local
+.env.*.local
 
-# IDE and editor files
+# ======================
+# IDE & Editor Files (Windows)
+# ======================
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 .DS_Store
 Thumbs.db
+Desktop.ini
 
-# MkDocs specific
-/.mkdocs.yml.swp  # if you use Vim
-/mkdocs.yml~      # backup files
+# ======================
+# MkDocs Specific
+# ======================
+mkdocs.yml~
+*.md~
+.cache/
 
-# Optional: ignore local MkDocs config overrides
-# /mkdocs-local.yml
-
-# Logs and databases
+# ======================
+# Logs & Temporary Files
+# ======================
 *.log
-*.sqlite
+logs/
+*.tmp
+temp/
+tmp/
+
+# ======================
+# Windows Specific
+# ======================
+$RECYCLE.BIN/
+*.lnk
+*.ini
+
+# ======================
+# Git & Version Control
+# ======================
+.git/
+!.gitignore
